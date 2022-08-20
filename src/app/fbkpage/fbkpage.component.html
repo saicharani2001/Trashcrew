@@ -1,0 +1,56 @@
+  <app-toolbar  [display]="display1"></app-toolbar>
+    <mat-card class="two" >
+        <h1>Fedback  Details</h1>
+                <table mat-table [dataSource]="feedbacks" class="mat-elevation-z8">
+
+                   
+                    <ng-container matColumnDef="location">
+                      <th mat-header-cell *matHeaderCellDef> Locations </th>
+                      <td mat-cell *matCellDef="let element"> {{element.location}} </td>
+                    </ng-container>
+                  
+                    
+                    <ng-container matColumnDef="issues">
+                      <th mat-header-cell *matHeaderCellDef> Issues </th>
+                      <td mat-cell *matCellDef="let element"> {{element.issues}} </td>
+                    </ng-container>
+                  
+                    
+                   <ng-container matColumnDef="lid">
+                      <th mat-header-cell *matHeaderCellDef> License Id </th>
+                      <td mat-cell *matCellDef="let element"> {{element.lid}} </td>
+                    </ng-container>
+                  
+                    
+                    
+                    <!--<ng-container matColumnDef="symbol">
+                      <th mat-header-cell *matHeaderCellDef> Symbol </th>
+                      <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+                    </ng-container> -->
+                  
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                  </table>
+                  <h1></h1>
+                  
+    </mat-card>
+
+<!-- <div class="one">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        
+        <th>Location</th>
+        <th>Issues</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of feedbacks" >
+        <td><span>{{data.location}}</span></td>
+        <td><span>{{data.issues}}</span></td>
+
+      </tr>
+    </tbody>
+  </table>
+
+</div> -->

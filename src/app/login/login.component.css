@@ -1,0 +1,42 @@
+#innercard{
+    width: 400px;
+    height: 400px;
+    background-color: rgba(225, 239, 223, 0.7)
+}
+#outercard{
+    width: 600px;
+    height: 600px;
+    background-color: rgba(50, 114, 54, 0.7);
+}
+body{
+    background-color: whitesmoke;
+}
+#span1{
+    font-size: 30px;
+    color: rgb(251, 242, 242);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#div1{
+    background-color: rgb(4, 42, 65);
+}
+.label{
+    color: rgb(4, 61, 105);
+    font-size: 1.3vw;
+}
+#loginbtn{
+    width: 100px;
+    height: 40px;
+    font-size: 22px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.1vw;
+}
+span>button{
+    background-color: transparent;
+    font-size: 16px;
+    padding: 0px;
+    text-decoration:underline;
+    color: blue;
+}
+#span2{
+    font-size: 16px;
+}

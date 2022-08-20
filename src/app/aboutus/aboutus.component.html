@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <app-home></app-home> -->
+<body fxLayout="column">
+    <mat-toolbar class="one"><div fxFlex="05"  class="toolbar">
+        <img  src="../../assets/icon.png" alt="image" width="50" height="50">
+    </div>
+        <span><b>TRASH CREW</b></span>
+        <div class="gap"></div>
+            <a routerLink="/home" routerLinkActivate="active" class="nav-link"mat-button>Home</a>
+            <a routerLink="/aboutus" routerLinkActivate="active" class="nav-link"mat-button>About Us</a>
+            <a routerLink="/contactus" routerLinkActivate="active" class="nav-link"mat-button>Contact Us</a>
+            <a routerLink="/help" routerLinkActivate="active" class="nav-link"mat-button><mat-icon >help_outline</mat-icon></a>
+        
+    </mat-toolbar>
+    <div fxFlex="40" fxLayout="row" class="two">
+        <div fxFlex="50">
+            <h1>Distribution of area in city office</h1>
+            <p>a metro-politan area or other urban area com- prising one or more adjacent </p>
+            <p> or nearby cities, villages or unincorporated areas, including developed areas .</p>
+            <p>And those areas are divided into several sub areas.For each sub area </p>
+            <p>muncipal corporation allots smart dustbin</p>
+        </div>
+        <div fxFlex="50" fxLayout="row" fxLayoutAlign="center end"><img src="../../assets/area.jpg" alt="image"> </div>   
+    </div>  
+    <div fxFlex="60" fxLayout="row">  
+        
+       <div fxFlex="30" fxLayout="row" fxLayoutAlign="center center"><img src="../../assets/system.jpg" alt="image"> </div>
+       <div fxFlex="70">                                                         
+        <h1>smart dustbins</h1>
+        <p>Smart dustbin is one of those innovative ideas. The smart dustbin uses an Ultrasonic sensor HC-SR04 to detect  when the</p>
+        <p> waste bin reaches the maximum level.It then sends the signals to Arduino Uno.This will alert both the Trash man and the </p> 
+        <p> city office.Then the Trash Man collects the waste from every active hotspots following the route given for him.After the waste </p>
+        <p> is collected, hotspot will be disabled automatically. If in case,if the waste in the area wise waste bin is not increasing or </p>
+        <p> remains same for 2days then a hotspot will be enabled automatically.If in case, the Trash Man missed collecting the waste from any </p>
+        <p> active hotspot in that area a message will be sent to the city office.Then the city office will instruct the Trash Man to collect</p>
+        <p> the dust from that active hotspot.Finally the waste is moved to the dump yard.Then at the dump yard the segregation process will be </p> 
+        <p>done.</p>
+   </div>
+    </div>
+</body>
+</html>

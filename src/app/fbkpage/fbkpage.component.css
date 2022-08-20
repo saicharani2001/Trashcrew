@@ -1,0 +1,27 @@
+.one{
+    /* background-color:rgb(227, 241, 160); */
+    background-color:transparent
+    
+}
+.two{
+    /* background-color:rgb(227, 241, 160); */
+    background-color:transparent;
+    min-width: 200px;
+    max-width: 550px;
+    min-height: 300px;
+    width: 100%;
+    
+    
+}
+.example-form {
+    min-width: 200px;
+    max-width: 550px;
+    min-height: 300px;
+    width: 100%;
+    background-color: rgb(105, 122, 78); 
+
+}
+table {
+    width: 100%;
+    background-color:transparent
+  }

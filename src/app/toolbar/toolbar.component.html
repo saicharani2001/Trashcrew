@@ -1,0 +1,12 @@
+<mat-toolbar class="one">
+    <div fxFlex="05"  class="toolbar">
+        <img  src="../../assets/icon2.jpg" alt="image" width="50" height="50">
+    </div>
+    <span><b>TRASH CREW</b></span>
+    <div class="gap"></div>
+        <a [routerLink]="['/mainscreen']" routerLinkActivate="active" class="nav-link" mat-button>Home</a>
+        <a [routerLink]="['/aboutus']" routerLinkActivate="active" class="nav-link" mat-button>About Us</a>
+        <a [routerLink]="['/contactus']" routerLinkActivate="active" class="nav-link" mat-button>Contact Us</a>
+        <a *ngIf="display" (click)="logout()" class="nav-link" mat-button>Logout</a>
+        <a [routerLink]="['/help']" routerLinkActivate="active" class="nav-link" mat-button><mat-icon >help_outline</mat-icon></a>
+</mat-toolbar>

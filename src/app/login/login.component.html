@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body fxLayout="column">
+        <app-home fxFlex="9"></app-home>
+        <div fxFlex="91" fxLayout="row">
+            <div fxFlex="50" fxLayout="row">
+                <img src="../../assets/loginbg.jpeg" alt="image">    
+            </div>
+            <div fxFlex="50" id="div2" fxLayout="row" fxLayoutAlign="center center">
+                <mat-card fxLayout="row" class="mat-elevation-z24" fxLayoutAlign="center center" id="outercard">
+                    <mat-card class="mat-elevation-z24" fxLayout="column" id="innercard">
+                        <div id="div1" fxFlex="15" fxLayout="row" fxLayoutAlign="center center">
+                            <span id="span1">MANAGER/USER  LOGIN</span>
+                        </div>
+                        <div fxFlex="50" fxLayout="column" fxLayoutAlign="space-evenly center">
+                            <div>
+                                <span class="label">LicenseID : </span>
+                                <mat-form-field appearance="outline">
+                                    <input matInput type="text" placeholder="LicenseID" [(ngModel)]="user.username">
+                                </mat-form-field>
+                            </div>
+                            <div>
+                                <span class="label">Password : </span>
+                                <mat-form-field appearance="outline">
+                                    <input matInput type="password"  placeholder="password" [(ngModel)]="user.password">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div fxLayout="column" fxFlex="25" fxLayoutAlign="center center">
+                            <div>
+                                <button id="loginbtn" mat-raised-button color="primary" (click)="login()">Login</button>
+                            </div>
+                            <div class="nav-link">
+                                <a routerLink="/home" routerLinkactivate="active" class="nav-link"><button mat-button class="text1">Forgot Password?</button></a>
+                            </div>
+                        </div> 
+                        <div fxLayout="row" fxLayoutAlign="center center">
+                            <span id="span2">Doesn't have an account? <button mat-button (click)="navtoRegister()">Register now</button></span>
+                        </div>
+                    </mat-card>
+                </mat-card>
+            </div>
+        </div>
+</body>
+</html>
+    

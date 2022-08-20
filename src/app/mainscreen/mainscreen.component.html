@@ -1,0 +1,26 @@
+<app-toolbar [display]="display1"></app-toolbar>
+<body fxLayout="row">
+    <div fxFlex="50" fxLayout="row" fxLayoutAlign="center center">
+        <button id="btn1" mat-raised-button (click)="openDialog()"><mat-icon>room</mat-icon>&nbsp;Route Details</button>
+    </div>
+    <div fxLayout="column" fxFlex="50">
+        <div fxLayout="row" fxLayoutAlign="end center" fxFlex="20">
+            <div fxflex="65"></div>
+            <div fxFlex="35">
+                <button class="btn2" mat-raised-button color="primary" (click)="navTo('fbkpage')" *ngIf="!display">User's Feedback</button>
+                <button class="btn2" mat-raised-button color="primary" (click)="navTo('login')" *ngIf="display">Sign In</button>
+                <button class="btn2" mat-raised-button color="primary"  (click)="navTo('instruct')">Instructions</button>
+            </div>
+        </div>
+        <div fxFlex="60" fxLayout="column" fxLayoutAlign="center start">
+            <span>Our country is our identity,</span>
+            <span id="span1">Keep it clean.</span>
+        </div>
+        <div fxFlex="20" fxLayout="row" fxLayoutAlign="center center">
+            <div fxFlex="75"></div>
+            <div fxFlex="25">
+                <button id="btn3" mat-raised-button (click)="navTo('feedback')" *ngIf="display">Feedback</button>
+            </div>
+        </div>
+    </div>
+</body>

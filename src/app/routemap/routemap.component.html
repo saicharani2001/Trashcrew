@@ -1,0 +1,17 @@
+<app-toolbar [display]="display1"></app-toolbar>
+<body fxLayout="row" fxLayoutAlign="center center">
+<mat-card >
+<mat-tab-group mat-align-tabs="start">
+    <mat-tab label="Devices">
+      <app-devices></app-devices>
+    </mat-tab>
+    <mat-tab label="Workers">
+      <app-emp></app-emp>
+    </mat-tab>
+    <mat-tab label="Map" class="three">
+      <img src="../../assets/route.gif" alt="image">
+    </mat-tab>
+  </mat-tab-group>
+</mat-card>
+</body>
+  

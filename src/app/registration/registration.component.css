@@ -1,0 +1,48 @@
+#innercard{
+    width: 550px;
+    height: 620px;
+    background-color: rgba(225, 239, 223, 0.7)
+}
+#outercard{
+    width: 680px;
+    height: 660px;
+    background-color: rgba(50, 114, 54, 0.7);
+}
+body{
+    background-color: whitesmoke;
+}
+#span1{
+    font-size: 30px;
+    color: rgb(251, 242, 242);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#div1{
+    background-color: rgb(4, 42, 65);
+}
+.label{
+    color: rgb(4, 61, 105);
+    font-size: 1.3vw;
+}
+#registerbtn{
+    width: 160px;
+    height: 40px;
+    font-size: 24px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.1vw;
+}
+span>button{
+    background-color: transparent;
+    font-size: 19px;
+    padding-left: 0px;
+    text-decoration:underline;
+    color: blue;
+}
+#span2{
+    font-size: 16px;
+}
+#address{
+    font-size: 25px;
+    padding-bottom: 5px;
+    color: rgb(14, 14, 95);
+    text-decoration: underline;
+}

@@ -1,0 +1,52 @@
+<app-toolbar [display]="display1"></app-toolbar>
+<body fxLayout="column">
+    <div fxFlex="91" fxLayout="row">
+        <div fxFlex="50" fxLayout="row" class="toolbar">
+            <img src="../../assets/edit.jpg" alt="image" width="500" height="500">
+        </div>
+        <div fxFlex="50" >
+            <mat-card class="two" >
+                <mat-toolbar class="t1">
+                    <span><strong>Edit Details</strong></span>
+                </mat-toolbar>
+                <br>
+                <mat-form-field >
+                    <mat-label><b>Full Name</b></mat-label>
+                    <input matInput type="text" placeholder="Full Name" [(ngModel)]="empDetails.fullname" [disabled]="display">
+                </mat-form-field>
+                <mat-form-field >
+                    <mat-label><b>Age</b></mat-label>
+                    <input matInput type="number" placeholder="Age" [(ngModel)]="empDetails.age" [disabled]="display">
+                </mat-form-field>
+                <mat-form-field >
+                    <mat-label><b>Driving License</b></mat-label>
+                    <input matInput type="text" placeholder="Driving License" [(ngModel)]="empDetails.licenseId" [disabled]="display">
+                </mat-form-field>
+                <mat-form-field >
+                    <mat-label><b>Phone Number</b></mat-label>
+                    <input matInput type="number" placeholder="Phone Number" [(ngModel)]="empDetails.phone" [disabled]="display">
+                </mat-form-field>
+                <mat-form-field >
+                    <mat-label><b>City</b></mat-label>
+                    <input matInput type="text" placeholder="City" [(ngModel)]="empDetails.city" [disabled]="display">
+                </mat-form-field>
+                <mat-form-field >
+                    <mat-label><b>Pincode</b></mat-label>
+                    <input matInput type="text" placeholder="Pincode" [(ngModel)]="empDetails.pincode" [disabled]="display">
+                </mat-form-field>
+                <mat-form-field >
+                    <mat-label><b>Place</b></mat-label>
+                    <input matInput type="text" placeholder="Place" [(ngModel)]="empDetails.place" [disabled]="display">
+                </mat-form-field>
+                <mat-form-field >
+                    <mat-label><b>Flat No./Street</b></mat-label>
+                    <input matInput type="text" placeholder="Flat No./Street" [(ngModel)]="empDetails.street" [disabled]="display">
+                </mat-form-field>
+                <br>
+                <div align="end">
+                    <button mat-raisedbutton type="submit" id="t4" (click)="updateDetails()"><em>Save</em></button>
+                </div>
+            </mat-card>    
+        </div>
+    </div>          
+</body>

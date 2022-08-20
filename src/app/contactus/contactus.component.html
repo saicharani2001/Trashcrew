@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<app-toolbar [display]="display1"></app-toolbar>
+<body fxLayout="column">
+    <div fxFlex="90" fxLayout="row" fxLayoutAlign="center center">
+        <div fxFlex="50" fxLayout="row" fxLayoutAlign="center center">
+            <img src="../../assets/feedbackimg.webp" alt="image">
+        </div>
+        <div fxFlex="60" fxLayout="row" fxLayoutAlign="space-around end">
+            <mat-card class="example-form">
+                    
+                <h2> Contact Us Form</h2>
+          
+                <mat-form-field  class="try" appearance="fill">
+                    <mat-label>Select your area</mat-label>
+                    <mat-select [(value)]="selected">
+                        <mat-option *ngFor="let area of areas" [value]="area.value">
+                          {{area.viewValue}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <br>
+                
+
+            </mat-card>
+        </div>
+    </div>
+</body>
+</html>

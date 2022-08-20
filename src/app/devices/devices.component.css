@@ -1,0 +1,31 @@
+.two{
+    background-color:darkkhaki;
+}
+body{
+    width:100%;
+}
+.example-form {
+    min-width: 200px;
+    max-width: 550px;
+    min-height: 300px;
+    width: 100%;
+    background-color: greenyellow; 
+
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  #btn{
+    font-size:20px;
+    height: 50px;
+    color:azure;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius:15px ;
+    background-color: rgb(36, 54, 87);
+
+  }
+  table{
+    width:100%;
+  }
+  

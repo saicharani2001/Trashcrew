@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body fxLayout="column">
+       <app-toolbar></app-toolbar>
+        <div fxFlex="90" fxLayout="row" fxLayoutAlign="center center">
+            <div fxFlex="50" fxLayout="row" fxLayoutAlign="center center">
+                <img src="../../assets/feedbackimg.webp" alt="image">
+            </div>
+            <div fxFlex="60" fxLayout="row" fxLayoutAlign="space-around end">
+                <mat-card class="example-form">
+                    
+                        <h2> Feedback Form</h2>
+                  
+                    <mat-form-field appearance="fill">
+                        <mat-label>Select your area</mat-label>
+                        <mat-select [(value)]="selected">
+                            <mat-option *ngFor="let area of areas" [value]="area.value">
+                              {{area.viewValue}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                  
+                    <mat-form-field class="example-full-width" appearance="fill">
+                      <mat-label>Issues</mat-label>
+                      <textarea matInput placeholder="issues" [(ngModel)]="issues"></textarea>
+                    </mat-form-field>
+
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>License Id</mat-label>
+                        <input matInput placeholder="lid" [(ngModel)]="lid">
+                      </mat-form-field>
+                    <br>
+                    <h1></h1>
+                    <div align="end" >
+                        <button mat-raised-button id="btn"   type="submit"  (click)="submit()">Submit</button>
+                    </div>
+                </mat-card>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+.one{
+    font-family: cursive;
+    background-color:  rgb(36, 182, 58);
+}
+#span1{
+    font-size: 30px;
+    color: rgb(251, 242, 242);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .two{
+    margin-top: 50px;
+    width: 400px;
+    height: 500px;
+    overflow-y: scroll;
+    background-color: rgb(241, 218, 195);
+  }
+  
+  .mat-form-field{
+    width: 100%;
+    font-family: cursive;
+  }
+  .t1{
+    background-color: rgb(179, 218, 218);
+    font-family:monospace;
+  }
+  #t4{
+    font-size: 18px;
+    height: 30px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-family: cursive;
+    background: linear-gradient(to bottom right, rgb(179, 218, 218),whitesmoke);
+    
+  }
+  body {
+    background-color:lightblue; 
+  }
+  
+  @media only screen and (max-width: 1500px) {
+    body {
+      background-color: yellow;
+    }
+  }
+  img {
+    border-radius: 50%;
+    margin-top: 50px;
+    padding-left: 30px;
+  }

@@ -1,0 +1,20 @@
+a{
+    font-family: cursive;
+    font-size:20px; 
+  }
+  .gap {
+    flex: 1 1 auto;
+    /* padding-left: 800px; */
+ }
+ .one{
+    font-family: cursive;
+    background-color:  rgb(179, 218, 218);
+}
+img {
+    border-radius: 70%;
+    margin-top: 17px;
+    /* padding-left: 30px; */
+  }
+  .two{
+    padding-left: 20px;
+  }

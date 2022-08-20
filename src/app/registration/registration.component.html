@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body fxLayout="column">
+        <app-toolbar [display]="display1" fxFlex="9"></app-toolbar>
+        <div fxFlex="91" fxLayout="row">
+            <div fxFlex="50" fxLayout="row">
+                <img src="../../assets/loginbg.jpeg" alt="image">
+            </div>
+            <div fxFlex="50" id="div2" fxLayout="row" fxLayoutAlign="center center">
+                <mat-card fxLayout="row" class="mat-elevation-z24" fxLayoutAlign="center center" id="outercard">
+                    <mat-card class="mat-elevation-z24" fxLayout="column" id="innercard">
+                        <div id="div1" fxFlex="8" fxLayout="row" fxLayoutAlign="center center">
+                            <span id="span1">REGISTRATION</span>
+                        </div>
+                        <div fxFlex="79" fxLayout="column" fxLayoutAlign="center center">
+                            <div fxLayout="row" fxFlex="65" fxLayoutGap="40px">
+                                <div fxLayout="column" fxFlex="50">
+                                    <div>
+                                        <mat-form-field appearance="outline">
+                                            <input matInput type="text" placeholder="Full Name" [(ngModel)]="registerForm.fullname">
+                                        </mat-form-field>
+                                    </div>
+                                    <div>
+                                        <mat-form-field appearance="outline">
+                                            <input matInput type="number"  placeholder="Age" [(ngModel)]="registerForm.age">
+                                        </mat-form-field>
+                                    </div>
+                                    <div>
+                                        <mat-form-field appearance="outline">
+                                            <input matInput type="text"  placeholder="Driving License" [(ngModel)]="registerForm.licenseId">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                                <div fxLayout="column" fxFlex="50">
+                                    <div>
+                                        <mat-form-field appearance="outline">
+                                            <input matInput type="number"  placeholder="Phone Number" [(ngModel)]="registerForm.phone">
+                                        </mat-form-field>
+                                    </div>
+                                    <div>
+                                        <mat-form-field appearance="outline">
+                                            <input matInput type="password"  placeholder="Password" [(ngModel)]="registerForm.password">
+                                        </mat-form-field>
+                                    </div>
+                                    <div>
+                                        <mat-form-field appearance="outline">
+                                            <input matInput type="password"  placeholder="Confirm Password" [(ngModel)]="registerForm.cnpassword">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <span id="address">ADDRESS</span>
+                            <div fxFlex="35" fxLayout="row" fxLayoutGap="40px">
+                                <div>
+                                    <div>
+                                        <mat-form-field appearance="outline">
+                                            <input matInput type="text"  placeholder="City" [(ngModel)]="registerForm.city">
+                                        </mat-form-field>
+                                    </div>
+                                    <div>
+                                        <mat-form-field appearance="outline">
+                                            <input matInput type="text"  placeholder="Pincode" [(ngModel)]="registerForm.pincode">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <mat-form-field appearance="outline">
+                                            <input matInput type="text"  placeholder="Place" [(ngModel)]="registerForm.place">
+                                        </mat-form-field>
+                                    </div>
+                                    <div>
+                                        <mat-form-field appearance="outline">
+                                            <input matInput type="text"  placeholder="Flat No./Street" [(ngModel)]="registerForm.street">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div fxLayout="column" fxFlex="8" fxLayoutAlign="center center">
+                            <div>
+                                <button id="registerbtn" mat-raised-button color="primary" (click)="display()">Register</button>
+                            </div>
+                        </div> 
+                        <div fxFlex="5" fxLayout="row" fxLayoutAlign="center center">
+                            <span id="span2">Already have an account? <button mat-button (click)="navtologin()">Login</button></span>
+                        </div>
+                    </mat-card>
+                </mat-card>
+            </div>
+        </div>
+</body>
+</html>
+    

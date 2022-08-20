@@ -1,0 +1,27 @@
+<app-toolbar [display]="display1"></app-toolbar>
+<body fxLayout="column">
+    <div fxFlex="91" fxLayout="row">
+        <div fxFlex="50" fxLayout="row" class="toolbar">
+            <img src="../../assets/edit.jpg" alt="image" width="500" height="500">
+        </div>
+        <div fxFlex="50" >
+            <mat-card class="two" >
+                <mat-toolbar class="t1">
+                    <span><strong>Device Details</strong></span>
+                </mat-toolbar>
+                <br>
+                <mat-form-field >
+                    <mat-label><b>Device Name</b></mat-label>
+                    <input matInput type="text" placeholder="devicename" [(ngModel)]="device.name">
+                </mat-form-field>
+                <mat-form-field >
+                    <mat-label><b>Device Location</b></mat-label>
+                    <input matInput type="text" placeholder="devicelocation" [(ngModel)]="device.location">
+                </mat-form-field>
+                <div align="end">
+                    <button mat-raised-button (click)="submit()"><em>Submit</em></button>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+</body>

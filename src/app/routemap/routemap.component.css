@@ -1,0 +1,45 @@
+.mat-tab-group {
+    margin-bottom: 48px;
+  }
+  .mat-card{
+      width:1100px;
+      height:600px;
+      margin-top: 50px;
+      /* overflow-y: scroll; */
+      
+  }
+  
+.toolbar{
+    background-color: rgba(36, 179, 36, 0.939);
+}
+body{
+    background-image: url("../../assets/fbk2.jpg");
+    width: 1530px;
+    height: 670px;
+}
+.one{
+    /* background-color:rgb(227, 241, 160); */
+    background-color:transparent
+    
+}
+.two{
+    /* background-color:rgb(227, 241, 160); */
+    background-color:transparent;
+    width: 400px;
+    
+    height: 300px;
+   
+ }
+ img{
+     width:680px;
+     height:500px;
+ }
+
+table {
+    width: 90%;
+    background-color:transparent;
+    margin-top: 100px;
+  }
+  .mat-header-cell{
+      font-size: 20px;
+  }

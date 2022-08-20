@@ -1,0 +1,17 @@
+img {
+    border-radius: 70%;
+    margin-top: 17px;
+    /* padding-left: 30px; */
+  }
+  a{
+    font-family: cursive;
+    font-size:20px; 
+  }
+  .gap {
+    flex: 1 1 auto;
+    /* padding-left: 800px; */
+ }
+ .one{
+    font-family: cursive;
+    background-color: rgba(36, 179, 36, 0.939); ;
+}
